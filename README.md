@@ -1,5 +1,7 @@
 # Understanding HTTP Status Codes
 
+🌐 **Live Demo:** https://understanding-http-status-codes.pages.dev
+
 A practical field guide to HTTP status codes built using **pure HTML only**.
 
 This project explains the different categories of HTTP response status codes and provides examples, tables, explanations, and interactive HTML elements to help beginner developers understand how HTTP communication works between clients and servers.
