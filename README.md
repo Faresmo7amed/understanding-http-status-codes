@@ -1,225 +1,100 @@
-# Understanding HTTP Status Codes
+# Understanding HTTP Status Codes 🌐
 
 🌐 **Live Demo:** https://understanding-http-status-codes.pages.dev
 
-A practical field guide to HTTP status codes built using **pure HTML only**.
+A practical field guide to HTTP status codes built using **pure HTML5**.
 
-This project explains the different categories of HTTP response status codes and provides examples, tables, explanations, and interactive HTML elements to help beginner developers understand how HTTP communication works between clients and servers.
+The project presents a single-page technical article explaining how HTTP response status codes work, covering all five status code categories with examples, tables, definitions, and interactive elements aimed at beginner developers.
 
----
+## Overview
 
-## 📌 Project Overview
+Understanding HTTP Status Codes is a semantic HTML article project created to practice building a long-form documentation page without using CSS or JavaScript.
 
-**Understanding HTTP Status Codes** is a static HTML article page that teaches:
+The goal of this project was to focus on:
+- HTML document structure for long-form content
+- Semantic HTML5 elements
+- Tables for structured reference data
+- Interactive elements without JavaScript
+- Code documentation markup
+- Proper use of HTML attributes
 
-- What HTTP status codes are
-- How status code categories work
-- Commonly used HTTP responses in REST APIs
-- The difference between client errors and server errors
-- Important HTTP terminology
-- Real examples of HTTP responses
+## Features
 
-The project was created as an HTML practice project focusing on semantic HTML structure without using CSS or JavaScript.
+### 1xx – Informational
+- Table of informational status codes (100, 101, 102, 103) with meanings
 
----
+### 2xx – Success
+- Table of success status codes (200, 201, 202, 204)
+- `<details>`/`<summary>` explaining when to use 200 vs 201
 
-## 🎯 Purpose
+### 3xx – Redirection
+- Definition list (`<dl>`) covering 301, 302, 304, 307, 308
 
-The goal of this project is to practice:
+### 4xx – Client Errors
+- Table of client error codes (400, 401, 403, 404, 409, 422, 429)
+- `<pre>`/`<code>` block showing a raw HTTP response
+- DevTools instructions using `<kbd>`, sample output using `<samp>`
 
-- Writing clean semantic HTML
-- Structuring long-form documentation pages
-- Using HTML5 semantic elements
-- Creating accessible content structures
-- Working with tables, forms, lists, and media elements
+### 5xx – Server Errors
+- Table of server error codes (500, 502, 503, 504)
+- `<aside>` describing a real-world production failure scenario
 
----
+### Glossary & Further Reading
+- Definition list of HTTP terminology
+- Ordered list of external references (RFC 9110, MDN, IANA)
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML5
 
-No external frameworks, CSS, or JavaScript were used.
+No external libraries, frameworks, CSS, or JavaScript were used.
 
----
+## Semantic HTML Elements Practiced
 
-## 📚 Features
+This project uses many HTML5 elements across a single page:
+- `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`
+- `<h1>`–`<h3>`, `<p>`, `<blockquote>`, `<abbr>`, `<mark>`, `<sup>`
+- `<ul>`, `<ol>`, `<dl>`
+- `<table>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`, `<th>`, `<td>`
+- `<details>`, `<summary>`
+- `<pre>`, `<code>`, `<kbd>`, `<samp>`
+- `<form>`, `<fieldset>`, `<legend>`, `<label>`, `<select>`, `<option>`, `<button>`
 
-### HTTP Status Code Sections
-
-The page includes explanations for:
-
-### 1xx — Informational Responses
-
-Examples:
-
-- 100 Continue
-- 101 Switching Protocols
-- 102 Processing
-- 103 Early Hints
-
----
-
-### 2xx — Successful Responses
-
-Examples:
-
-- 200 OK
-- 201 Created
-- 202 Accepted
-- 204 No Content
-
-Includes:
-
-- HTTP request/response cycle example
-- Explanation of when to use 200 vs 201
-
----
-
-### 3xx — Redirection Messages
-
-Examples:
-
-- 301 Moved Permanently
-- 302 Found
-- 304 Not Modified
-- 307 Temporary Redirect
-- 308 Permanent Redirect
-
----
-
-### 4xx — Client Errors
-
-Examples:
-
-- 400 Bad Request
-- 401 Unauthorized
-- 403 Forbidden
-- 404 Not Found
-- 409 Conflict
-- 422 Unprocessable Content
-- 429 Too Many Requests
-
-Includes:
-
-- Raw HTTP response example
-- Browser DevTools instructions
-- Console output example
-
----
-
-### 5xx — Server Errors
-
-Examples:
-
-- 500 Internal Server Error
-- 502 Bad Gateway
-- 503 Service Unavailable
-- 504 Gateway Timeout
-
-Includes:
-
-- Production failure scenario example using `<aside>`
-
----
-
-## 🧩 HTML Elements Practiced
-
-This project intentionally uses many HTML5 elements, including:
-
-### Document Structure
-
-- `<header>`
-- `<nav>`
-- `<main>`
-- `<section>`
-- `<footer>`
-
-### Text Content
-
-- `<h1>` - `<h3>`
-- `<p>`
-- `<blockquote>`
-- `<abbr>`
-- `<mark>`
-- `<sup>`
-
-### Lists
-
-- `<ul>`
-- `<ol>`
-- `<dl>`
-
-### Tables
-
-- `<table>`
-- `<thead>`
-- `<tbody>`
-- `<tfoot>`
-- `<tr>`
-- `<th>`
-- `<td>`
-
-### Interactive Elements
-
-- `<details>`
-- `<summary>`
-
-### Code Documentation
-
-- `<pre>`
-- `<code>`
-- `<kbd>`
-- `<samp>`
-
-### Forms
-
-- `<form>`
-- `<fieldset>`
-- `<legend>`
-- `<label>`
-- `<select>`
-- `<option>`
-- `<button>`
-
----
-
-## 📖 Glossary Included
+## Glossary Included
 
 The page contains explanations for important HTTP concepts:
-
 - Idempotent
 - Safe Method
 - Payload
 - Header
 - Status Line
 
----
-
-## 🔗 Further Reading
-
-External references included:
-
-- RFC 9110 — HTTP Semantics
-- MDN HTTP Status Codes
-- MDN HTTP Methods
-- IANA HTTP Status Code Registry
-- HTTP Working Group Specifications
-
----
-
-## ⚠️ Note About Deprecated HTML Attributes
+## Notes
 
 This project intentionally uses some deprecated HTML tags and attributes:
-
-Examples:
-
 - `<center>`
 - `leftmargin`
 - `border`
 - `cellpadding`
 - `cellspacing`
 
-They were used because the project was created without CSS, and they helped with basic visual formatting.
+They were used because the project was created without CSS, and they helped with basic visual formatting. In modern web development, these should be replaced with CSS.
 
-In modern web development, these should be replaced with CSS.
+## Project Purpose
+
+This project is part of my HTML learning journey and focuses on writing clean, semantic, long-form documentation markup before adding styling and interactivity.
+
+## Future Improvements
+
+Possible improvements:
+- Add responsive CSS styling
+- Replace deprecated HTML attributes with CSS
+- Add JavaScript-powered interactive quiz scoring
+- Add search/filter functionality across status codes
+- Add Web Accessibility (ARIA roles and attributes)
+
+## Author
+
+**Fares Mohamed**
+
+© 2026 Understanding HTTP Status Codes
